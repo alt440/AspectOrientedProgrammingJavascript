@@ -1,4 +1,4 @@
-import error from '../aspects/error.js';
+import * as error from '../aspects/error.js';
 import addAspects from '../helper/aspect.js';
 
 const divisor = addAspects(error);

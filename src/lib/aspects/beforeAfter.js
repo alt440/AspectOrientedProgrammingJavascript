@@ -1,11 +1,7 @@
-const beforeAfter = {}
-
-beforeAfter.subtraction = function (functionName, ...args) {
-  // Do logging
-  return {
-    before: () => console.log(`LOGGER ${functionName}(${args})`),
-    after: () => console.log(`LOGGER ${functionName}(${args}) done`)
-  };
+export function before(functionName, ...args){
+  console.log(`LOGGER ${functionName}(${args})`);
 }
 
-export default beforeAfter
+export function after(functionName, ...args){
+  console.log(`LOGGER ${functionName}(${args}) done`);
+}

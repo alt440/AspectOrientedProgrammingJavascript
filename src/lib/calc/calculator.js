@@ -1,4 +1,4 @@
-import logger from '../aspects/logger.js';
+import * as logger from '../aspects/logger.js';
 import addAspects from '../helper/aspect.js';
 
 const api = addAspects(logger);

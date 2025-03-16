@@ -1,4 +1,4 @@
-import beforeAfter from '../aspects/beforeAfter.js';
+import * as beforeAfter from '../aspects/beforeAfter.js';
 import addAspects from '../helper/aspect.js';
 
 const subtractor = addAspects(beforeAfter);

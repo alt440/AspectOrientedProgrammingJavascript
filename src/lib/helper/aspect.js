@@ -1,4 +1,3 @@
-//IMPORTANT: NAME OF PROP MUST BE THE SAME FOR TARGET AND ASPECT!!
 export default function addAspects (aspect) {
     // target is the object (i.e. aspect), prop is the type of aspect (before, after, during), and receiver
     //debugger;
@@ -39,7 +38,7 @@ export default function addAspects (aspect) {
   }
 
 function callAspect(aspect, prop, name, ...args){
-    let nameAspectRef = aspect[prop]?.(prop, ...args)[name];
+    let nameAspectRef = aspect[name]?.(prop, ...args);
     if (typeof nameAspectRef === 'function') {
         return nameAspectRef();
     }
